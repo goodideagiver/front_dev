@@ -10,6 +10,7 @@ h2 {
 
 h1 {
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -23,22 +24,21 @@ span {
 
 section,header {
     padding: 10px 60px 20px 60px;
-    background-color: white;
-    width: 960px;
-    margin: 0 auto;
+    margin:20px;
 }
 
 header {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 60px;
 }
 
 header ul {
     list-style: none;
 }
 
-header li {
+li {
     margin-bottom: 15px;
 }
 
@@ -86,4 +86,41 @@ header li {
 
 p {
     line-height: 1.5;
+}
+
+.cv-download-link {
+    border: 2px solid cornflowerblue;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 26px;
+    transition: background-color 0.5s, color 0.5s;
+    box-shadow: 0 0 20px lightgrey;
+}
+
+.cv-download-link:hover {
+    color:white;
+    background-color: cornflowerblue;
+}
+
+.cv-download-link:active {
+    text-decoration: underline;
+}
+
+.container {
+    box-shadow: 0 0 20px lightgrey;
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+section {
+    border-radius: 25px;
+    transition: box-shadow 0.2s,background-color 0.5s,padding 2s,margin 2s;
+}
+
+section:hover {
+    box-shadow: 0 0 20px lightgray;
 }
