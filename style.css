@@ -24,7 +24,7 @@ span {
 
 section,header {
     padding: 10px 60px 20px 60px;
-    margin:20px;
+
 }
 
 header {
@@ -110,17 +110,18 @@ p {
 }
 
 .container {
-    box-shadow: 0 0 20px lightgrey;
     width: 960px;
     margin: 0 auto;
-    background-color: white;
 }
 
 section {
     border-radius: 25px;
     transition: box-shadow 0.2s,background-color 0.5s,padding 2s,margin 2s;
+    background-color: rgb(218, 218, 218);
+    margin-bottom:40px;
+    margin-top: 40px;
 }
 
 section:hover {
-    box-shadow: 0 0 20px lightgray;
+
 }
