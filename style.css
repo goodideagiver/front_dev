@@ -12,13 +12,13 @@ h1 {
     font-size: 36px;
 }
 
-span {
-    color: gray;
+h3 {
+    margin-top: 2px;
+    font-size: 13px;
 }
 
-img {
-    width: 180px;
-    height: 180px;
+span {
+    color: gray;
 }
 
 section,header {
@@ -42,13 +42,48 @@ header li {
     margin-bottom: 15px;
 }
 
-header address img {
+.address-icon {
     width: 16px;
     height: 16px;
     background-color: cornflowerblue;
     margin-right: 10px;
     padding: 8px;
-    border-radius: 50%;
     vertical-align: middle;
 }
 
+.circle {
+    border-radius: 50%;
+}
+
+.profile-picture {
+    width: 180px;
+    height: 180px;
+}
+
+.hobbys {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbys li {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.hobbys div {
+    margin-left: 20px;
+}
+
+.hobbys p {
+    color: gray;
+    font-size: 13px;
+    
+}
+
+p {
+    line-height: 1.5;
+}
