@@ -71,3 +71,16 @@ a {
 h2 {
     text-align: center;
 }
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: darkslategray;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration:underline;
+    color: purple;
+}
