@@ -164,3 +164,20 @@ section h1 {
     background-color: var(--main-text-color);
     color:var(--button-hover-text);
 }
+
+@media (max-width:760px){
+    section,header,nav {
+        display: none;
+    }
+
+    #dev-info {
+        display: block;
+        text-align:center;
+    }
+}
+
+@media (min-width:760px) {
+    #dev-info {
+        display: none;
+    }
+}
