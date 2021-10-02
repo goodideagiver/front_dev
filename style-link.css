@@ -1,3 +1,12 @@
+:root {
+    --main-bg-color:#301b5c;
+    --section-bg-color:#822768;
+    --main-text-color:white;
+    --special-button-color:#ffb754;
+    --button-hover-bg:lightblue;
+    --button-hover-text:black;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +29,7 @@ html {
 }
 
 body{
-    background: #301b5c;
+    background: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,13 +38,13 @@ body{
 }
 header h1{
     font-size: 3rem;
-    color: white; 
+    color: var(--main-text-color); 
     margin: 1rem 1rem 1rem 1rem;
 }
 .golden{
     text-align: center;
     padding: 1rem 2rem;
-    background:#ffb754;
+    background:var(--special-button-color);
     border-radius: 2rem;
     text-decoration: none;
     color: black;
@@ -46,8 +55,8 @@ header h1{
 }
 
 .golden:hover {
-    background-color: lightblue;
-    color: black;
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-text);
 }
 
 div{
@@ -59,7 +68,7 @@ div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #822768;
+    background: var(--section-bg-color);
     border-radius: 2rem;
     max-width: 900px;
 }
@@ -94,8 +103,8 @@ div ul li a{
 }
 
 div ul li a:hover {
-    background-color: lightblue;
-    color: black;
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-text);
 }
 
 .powered{
