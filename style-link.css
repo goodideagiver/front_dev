@@ -3,13 +3,29 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
+
+html {
+    background-image: url(images/stars.png);
+    background-repeat: tile;
+    background-size: 100%;
+}
+
+.stars {
+    background-image: linear-gradient(black,#301b5c,#301b5c);
+    background-repeat: tile;
+    background-size: 1080px;
+}
+
 body{
-    background: black;
+    background: #301b5c;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    height: 100vh;
 }
 header h1{
     font-size: 3rem;
@@ -19,31 +35,33 @@ header h1{
 .golden{
     text-align: center;
     padding: 1rem 2rem;
-    background: gold;
+    background:#ffb754;
     border-radius: 2rem;
     text-decoration: none;
     color: black;
     width: 100%;
     margin: 1rem;
     transition: background-color 0.5s,color 0.5s;
+    max-width: 900px;
 }
 
 .golden:hover {
-    background-color: limegreen;
-    color: white;
+    background-color: lightblue;
+    color: black;
 }
 
 div{
     width: 100%;
-    height: 100%;
+    height: fit-content;
     position:relative;
     padding: 2rem 1rem 0rem 1rem;
     margin: 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(66, 66, 66);
+    background: #822768;
     border-radius: 2rem;
+    max-width: 900px;
 }
 div h2{
     color: white;
@@ -54,7 +72,9 @@ div ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 100%;
+
 }
 div ul li{
     margin: 0.5rem;
@@ -65,16 +85,17 @@ div ul li a{
     width: 100%;
     display: inline-block;
     padding: 1rem 2rem;
-    background: rgb(8, 8, 8);
     border-radius: 2rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-align: center;
     transition: background-color 0.5s,color 0.5s;
+    background: #c34664;
 }
 
 div ul li a:hover {
-    background-color: crimson;
+    background-color: lightblue;
+    color: black;
 }
 
 .powered{
