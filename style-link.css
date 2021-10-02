@@ -25,6 +25,7 @@ header h1{
     color: black;
     width: 100%;
     margin: 1rem;
+    transition: background-color 0.5s,color 0.5s;
 }
 
 .golden:hover {
@@ -64,11 +65,12 @@ div ul li a{
     width: 100%;
     display: inline-block;
     padding: 1rem 2rem;
-    background: black;
+    background: rgb(8, 8, 8);
     border-radius: 2rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-align: center;
+    transition: background-color 0.5s,color 0.5s;
 }
 
 div ul li a:hover {
@@ -87,3 +89,4 @@ div ul li a:hover {
 .powered a:hover {
     text-decoration: underline;
 }
+
