@@ -157,9 +157,7 @@ section h1 {
     text-decoration: none;
     padding: 2rem;
     color: var(--main-text-color);
-    background-color: transparent;
-    border-color: var(--main-text-color);
-    border-style: dashed;
+    background-color: gray;
 }
 
 .normal-button:hover {
