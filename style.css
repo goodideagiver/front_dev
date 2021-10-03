@@ -23,33 +23,35 @@ body {
 
 header {
     background-color: var(--section-bg-color);
-    align-items: center;
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    flex-direction: row;
 }
 
 header div {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 40%;
+    width: fit-content;
     height: auto;
+    margin: 1vh;
 }
 
 header div a {
     color: lightgray;
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 header img {
     border-radius: 50%;
-    width: 40%;
-    max-width: max-content;
+    max-width: 300px;
     border-color: var(--main-text-color);
     border-style: dashed;
+    margin: 1vh;
 }
 
 header {
-    height: 100vh;
+    height: 90vh;
     padding: 3rem;
     text-align: center;
     display: flex;
@@ -58,7 +60,8 @@ header {
 
 h1 {
     color: var(--main-text-color);
-    font-size: 5vh;
+    font-size: 50px;
+    font-size: 4vh;
 }
 
 h2 {
@@ -132,7 +135,7 @@ section h1 {
     color: var(--button-hover-text);
     background-color: var(--special-button-color);
     border-radius: 25px;
-    margin: 1rem;
+    margin: 1vw;
 }
 
 .gold-button:hover {
@@ -147,7 +150,7 @@ section h1 {
     color: var(--main-text-color);
     background-color: gray;
     border-radius: 25px;
-    margin: 1rem;
+    margin: 1vw;
 }
 
 .normal-button:hover {
@@ -234,6 +237,7 @@ section {
     align-items: center;
     text-align: center;
     margin-bottom: 20vh;
+    font-size: 16px;
 }
 
 .section-portfolio {
@@ -257,16 +261,16 @@ section table {
 
 table {
     table-layout:fixed;
-    font-size: 2vw;
+    font-size: 16px;
 }
 
 td {
     width: 50%;
-
     border-bottom: 1px solid black;
     overflow: hidden; 
     text-overflow: ellipsis; 
     word-wrap: break-word;
+    font-size: 14px;
 }
 
 
@@ -275,7 +279,11 @@ td {
 
 @media (min-width:760px) {
     .bottom-el-container {
-        max-width: 50%;
+        max-width: 60%;
         margin: auto;
+    }
+
+    header img {
+        width: 500px;
     }
 }
