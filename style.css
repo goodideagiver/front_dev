@@ -204,8 +204,12 @@ body,.dark,section,a,header,.text-box {
 .section-next-to {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.section-next-to section {
+    width: 100%;
 }
 
 .text-box {
@@ -220,7 +224,6 @@ body,.dark,section,a,header,.text-box {
 section {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     box-sizing: border-box;
     padding: 1rem;
     align-items: center;
@@ -281,13 +284,16 @@ td {
     }
 }
 
-@media (max-width:760px){
+@media (max-width:990px),only screen and (hover: none) and (pointer: coarse){
     nav {
         display: none;
     }
 
     .topnav {
         display: block;
+    }
+    .section-next-to {
+        flex-wrap: wrap;
     }
 }
 
