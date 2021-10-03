@@ -19,8 +19,22 @@
     <script src="script.js"></script>
     <title>ADOT ART</title>
 </head>
-<body>
-    <nav id="Home">
+<body id="Home">
+    <div class="topnav">
+        <a href="#home" class="active">ADOT ART - Adot.pl</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#Home">Home</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#prices">Price list</a>
+          <a href="#Contact">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <nav>
         <ul class="horizontal">
             <li><a href="#Home">Home</a></li>
             <li><a href="#Portfolio">Portfolio</a></li>
@@ -115,8 +129,7 @@
                 </div>
             </section>
         </div>
-    </ class="bottom-el-container">
-    <!-- <h1 id="dev-info">Sorry this site is under development and needs to be viewed horizontally</h1> -->
+    </div class="bottom-el-container">
 </body>
 <h1 class="powered">Powered by <a rel="noopener noreferrer" target="_blank" href="https://www.twitch.tv/prpl_blck">prplblck</a></h1>
 </html>
