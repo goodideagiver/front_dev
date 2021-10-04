@@ -65,9 +65,11 @@ h1 {
 
 h2 {
     text-align: center;
+    color: var(--main-text-color);
 }
 
 section h1 {
+    padding-top: 80px;
     display: block;
     margin: auto;
     text-align: center;
@@ -247,8 +249,8 @@ section table {
     padding: 2rem;
     background-color: var(--main-text-color);
     border-radius: 25px;
-    margin: 1vw;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 table {
@@ -263,6 +265,7 @@ td {
     text-overflow: ellipsis; 
     word-wrap: break-word;
     font-size: 14px;
+    line-height: 5;
 }
 
 
@@ -341,3 +344,31 @@ td {
     color: white;
   }
 
+section ul {
+    list-style: none;
+    line-height: 1;
+    padding: 2rem;
+    border-radius: 25px;
+    margin: auto;
+}
+
+section ul li {
+
+    background-color: var(--main-text-color);
+    padding: 1rem;
+    border-radius: 25px;
+    margin: 15px 15px;
+    width: 200px;
+    float: right;
+}
+
+section ul li i {
+    color: red;
+    border-radius: 50%;
+}
+
+@media (max-width:1470px) {
+    section ul li {
+    float:none;
+    }
+}
