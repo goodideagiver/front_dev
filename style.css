@@ -69,7 +69,6 @@ h2 {
 }
 
 section h1 {
-    padding-top: 80px;
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -129,14 +128,14 @@ section h1 {
 }
 
 .gold-button {
-    width: fit-content;
+    width: 100%;
     text-decoration: none;
     font-weight: bold;
     padding: 2rem;
     color: var(--button-hover-text);
     background-color: var(--special-button-color);
     border-radius: 25px;
-    margin: 1vw;
+    margin: 15px;
 }
 
 .gold-button:hover {
@@ -145,30 +144,20 @@ section h1 {
 }
 
 .normal-button {
-    width: auto;
+    width: 100%;
     text-decoration: none;
     padding: 2rem;
     color: var(--main-text-color);
     background-color: gray;
     border-radius: 25px;
-    margin: 1vw;
+    margin: 15px;
+    text-align: center;
 }
 
 .normal-button:hover {
     background-color: var(--main-text-color);
     color:var(--button-hover-text);
 }
-
-
-
-@media (min-width:760px) {
-    /*
-    #dev-info {
-        display: none;
-    }
-    */
-}
-
 
 .dark {
     background-color: #222;
@@ -216,7 +205,7 @@ body,.dark,section,a,header,.text-box {
 
 .text-box {
     background-color: var(--main-text-color);
-    margin: 1vw;
+    margin: 15px;
     padding: 2rem;
     text-align: justify;
     border-radius: 25px;
@@ -251,6 +240,7 @@ section table {
     border-radius: 25px;
     width: 100%;
     margin-bottom: 50px;
+    margin: 15px;
 }
 
 table {
@@ -265,7 +255,7 @@ td {
     text-overflow: ellipsis; 
     word-wrap: break-word;
     font-size: 14px;
-    line-height: 5;
+    line-height: 170px;
 }
 
 
@@ -379,4 +369,20 @@ td img {
     height: 150px;
     object-fit:scale-down;
     padding: 10px;
+    image-rendering: smooth;
+    margin: 0;
+    transition: all 0.5s;
+}
+
+@media (min-width:800px) {
+    td img:hover {
+        background-color: white;
+        height: 300px;
+        width: 300px;
+    }
+}
+.watermark {
+    background-image: url("images/pricetable/watrmark.png");
+    background-size: auto;
+    z-index: 3;
 }
