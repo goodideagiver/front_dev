@@ -71,7 +71,7 @@ h2 {
 section h1 {
     padding-top: 80px;
     display: block;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     align-items: center;
 }
@@ -371,4 +371,12 @@ section ul li i {
     section ul li {
     float:none;
     }
+}
+
+td img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit:scale-down;
+    padding: 10px;
 }
