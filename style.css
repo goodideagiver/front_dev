@@ -220,6 +220,7 @@ section {
     align-items: center;
     text-align: center;
     margin-bottom: 20vh;
+    margin-top: 5vh;
     font-size: 16px;
 }
 
@@ -277,18 +278,7 @@ td {
     }
 }
 
-@media (max-width:990px),only screen and (hover: none) and (pointer: coarse){
-    nav {
-        display: none;
-    }
 
-    .topnav {
-        display: block;
-    }
-    .section-next-to {
-        flex-wrap: wrap;
-    }
-}
 
 .topnav {
     overflow: hidden;
@@ -335,6 +325,7 @@ td {
   }
 
 section ul {
+    display: block;
     list-style: none;
     line-height: 1;
     padding: 2rem;
@@ -386,3 +377,84 @@ td img {
     background-size: auto;
     z-index: 3;
 }
+
+.mobile-footer-nav {
+    position:fixed;
+    bottom: 4%;
+    right: 3%;
+    display: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.767);
+}
+
+.mobile-footer-nav a {
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: var(--special-button-color);
+    padding: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+@media (max-width:990px),only screen and (hover: none) and (pointer: coarse){
+    nav {
+        display: none;
+    }
+
+    .topnav {
+        display: block;
+    }
+    .section-next-to {
+        flex-wrap: wrap;
+    }
+
+    td img {
+        width: 100px;
+        height: 100px;
+    }
+
+    table {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    td {
+        padding: 0px;
+        margin: 0px;
+        line-height: normal;
+    }
+
+    section table {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    section {
+        padding: 0px;
+    }
+
+    .text-box {
+        margin: 5px;
+    }
+
+    .mobile-footer-nav {
+        display: block;
+    }
+}
+
+.tableheader {
+    width: 100%;
+}
+
+section div p {
+    color: var(--main-text-color);
+}
+
+section div  p a {
+    color: var(--special-button-color);
+}
+
