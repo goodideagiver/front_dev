@@ -181,6 +181,15 @@ body,.dark,section,a,header,.text-box {
     transition: background-color 0.5s;
 }
 
+.dark section table {
+    color: rgb(255, 255, 255);
+    background-color: #2a2a2a;
+}
+
+.dark section ul li {
+    background-color: #2a2a2a;
+}
+
 #dark-toggle {
     border: none;
     text-align: center;
