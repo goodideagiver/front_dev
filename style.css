@@ -135,7 +135,7 @@ section h1 {
     color: var(--button-hover-text);
     background-color: var(--special-button-color);
     border-radius: 25px;
-    margin: 15px;
+    margin: 5px;
 }
 
 .gold-button:hover {
@@ -150,8 +150,9 @@ section h1 {
     color: var(--main-text-color);
     background-color: gray;
     border-radius: 25px;
-    margin: 15px;
     text-align: center;
+    font-size:16px;
+    margin: 5px;
 }
 
 .normal-button:hover {
@@ -212,6 +213,18 @@ body,.dark,section,a,header,.text-box {
     line-height: 2;
 }
 
+.text-box ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.text-box ul li {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10vh;
+}
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -229,6 +242,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     
 }
 
@@ -457,4 +471,6 @@ section div p {
 section div  p a {
     color: var(--special-button-color);
 }
+
+/*tutaj kod modal gallery*/
 
