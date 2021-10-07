@@ -413,19 +413,19 @@ td img {
     padding: 10px;
     image-rendering: smooth;
     margin: 0;
-    transition: all 0.5s;
 }
 
 @media (min-width:800px) {
     td img:active {
         background-color: white;
-        transform: scale(2);
+        transform: scale(3);
         position: absolute;
         transform-origin: right;
     }
 
     td img:hover {
         cursor: pointer;
+        box-shadow: 0px 0px 50px black;
     }
 }
 .watermark {
@@ -556,29 +556,3 @@ section div  p a {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
-/*Tooltipy*/
-
-.tooltip {
-  }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
