@@ -1,7 +1,7 @@
 :root {
     --main-bg-color:#301b5c;
     --section-bg-color:#b63a93;
-    --main-text-color:white;
+    --main-text-color:rgba(255, 255, 255, 0.438);
     --special-button-color:#ffb754;
     --button-hover-bg:lightblue;
     --button-hover-text:black;
@@ -18,10 +18,9 @@ html {
 }
 
 body {
-
-
-    background: rgb(121,121,205);
-    background: linear-gradient(179deg, rgba(121,121,205,1) 0%, rgba(224,175,213,1) 100%);
+    background-image: url("images/bg-placeholder.png");
+   background-image: url("images/bg-placeholder.png"), linear-gradient(rgba(121,121,205,1), rgba(224,175,213,1));
+    background-position: center; 
 }
 
 header {
@@ -74,14 +73,14 @@ header h1 {
 
 
 h1 {
-    color: var(--main-text-color);
+    color: white;
     font-size: 50px;
     font-size: 4vh;
 }
 
 h2 {
     text-align: center;
-    color: var(--main-text-color);
+    color: white;
 }
 
 section h1 {
@@ -117,6 +116,7 @@ section h1 {
     flex-flow: row wrap;
     position: fixed;
     background-color: var(--section-bg-color);
+    z-index: 8;
 }
 
 .horizontal li {
@@ -131,7 +131,7 @@ section h1 {
     padding: 1rem;
     margin: 1rem;
     text-decoration: none;
-    color: var(--main-text-color);
+    color: white;
 }
 
 .horizontal li a:hover {
@@ -164,7 +164,7 @@ section h1 {
     width: 100%;
     text-decoration: none;
     padding: 2rem;
-    color: var(--main-text-color);
+    color: white;
     background-color: var(--section-bg-color);
     border-radius: 25px;
     text-align: center;
@@ -256,7 +256,7 @@ body,.dark,section,a,header,.text-box {
 
 .text-box ul li span {
     background-color: var(--special-button-color);
-    color: var(--main-text-color);
+    color: white;
     padding: 5px;
     margin-right: 15px;
     border-radius: 50%;
@@ -336,6 +336,7 @@ td {
     background-color: var(--section-bg-color);
     position: fixed;
     width: 100%;
+    z-index: 20;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -557,3 +558,72 @@ section div  p a {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .text-box,section table {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  }
+  
+  /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+  @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .text-box,section table,section ul li {
+      background-color: rgba(255, 255, 255, .8);
+    }
+  }
+
+
+
+
+
+
+  .section-portfolio a ul li {
+      background-color: transparent;
+  }
+
+  .image-container {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+  }
+  
+  .image-container img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+      to bottom,
+      hsla(5, 15%, 5%, 0) 0%,
+      hsla(5, 15%, 5%, 0.013) 8.1%,
+      hsla(5, 15%, 5%, 0.049) 15.5%,
+      hsla(5, 15%, 5%, 0.104) 22.5%,
+      hsla(5, 15%, 5%, 0.175) 29%,
+      hsla(5, 15%, 5%, 0.259) 35.3%,
+      hsla(5, 15%, 5%, 0.352) 41.2%,
+      hsla(5, 15%, 5%, 0.45) 47.1%,
+      hsla(5, 15%, 5%, 0.55) 52.9%,
+      hsla(5, 15%, 5%, 0.648) 58.8%,
+      hsla(5, 15%, 5%, 0.741) 64.7%,
+      hsla(5, 15%, 5%, 0.825) 71%,
+      hsla(5, 15%, 5%, 0.896) 77.5%,
+      hsla(5, 15%, 5%, 0.951) 84.5%,
+      hsla(5, 15%, 5%, 0.987) 91.9%,
+      hsl(5, 15%, 5%) 100%
+    );
+  }
