@@ -1,0 +1,301 @@
+* {
+    font-family: arial;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+
+body {
+    height: 100%;
+    background-image: url("images/bg-placeholder.png"), linear-gradient(rgba(121,121,205,1), rgba(224,175,213,1));
+    background-position: center;
+    
+}
+
+#navbar > div {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar div {
+    gap: 15%;
+}
+
+header {
+    height: 100vh;
+    background-image: url(images/header-bg.png);
+    background-size:contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+header img {
+    border-radius: 50%;
+    width: 100%;
+    min-width: 380px;
+    border: 2px solid white;
+}
+
+h2 {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.header-container {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    gap: 5%;
+
+}
+
+.header-container > div {
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-container > div div,.header-container > div div h1, .header-container > div div p{
+    text-shadow: 2px 2px 0px #ffb754;
+    font-size: 5rem;
+    text-align: left;
+    justify-content: right;
+}
+
+.header-container > div div p {
+    font-size: 2rem;
+    text-shadow: none;
+}
+
+.header-container h1 {
+    color: white;
+}
+
+.page-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    margin: 0px;
+    padding: 15vh 0px;
+}
+
+.text-box {
+    background-color: white;
+    text-align: justify;
+    display: flex;
+    padding: 25px;
+    border-radius: 25px;
+    min-height: 140px;
+}
+
+p.text-box {
+    display: block;
+    min-height: 0px;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bottom-container {
+    display: flex;
+    margin-bottom: 0px;
+    gap: 5%;
+}
+
+.bottom-container > div {
+    flex-basis: 100%;
+}
+
+.bottom-container > p {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.bottom-container > p > i {
+    color: red;
+    display: block;
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    background-color: #ffb754;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 0px;
+    border-radius: 50px;
+    transition: all 0.5s;
+    user-select: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+    background-color: white;
+}
+
+.price-table {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.price-table > div {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.price-table div div {
+    max-width: none;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    padding: 10px;
+
+}
+
+.price-table img {
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185);
+}
+
+#portfolio ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+#portfolio ul li {
+    display: flex;
+    flex-basis: 45%;
+}
+
+#portfolio ul li span{
+    margin-right: 10px;
+}
+
+/*Layout mobilny*/
+
+@media screen and (max-width:800px) {
+    .page-container {
+        width: 100%;
+    }
+
+    .header-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .header-container > div {
+        
+    }
+
+    .header-container > div div h1 {
+        font-size: 3rem;
+    }
+
+    .header-container > div div p {
+        font-size: 1.2rem;
+    }
+
+    .bottom-container {
+        display: block;
+    }
+
+    .bottom-container div {
+        margin: 10px 0px;
+    }
+
+    .text-box {
+        border-radius: 0px;
+    }
+
+    .tbox-margin {
+        margin: 0px;
+    }
+
+    header img {
+        width: 80%;
+        min-width: 50px;
+    }
+
+    #welcome {
+        align-items: flex-start;
+    }
+
+    #photo {
+        align-items: flex-end;
+    }
+
+    .price-table > div {
+        max-width: 40%;
+    }
+}
+
+/*Layout mobilny end*/
+
+#navbar {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .poweredby {
+      font-weight: bolder;
+      color: gray;
+      text-align: center;
+      
+  }
+
+  .poweredby p {
+    width: 100%;
+   
+  }
+
+  .poweredby a {
+      color: purple;
+      text-decoration: none;
+      transition: all 1s;
+  }
+
+  .poweredby a:hover {
+      color: gold;
+      text-shadow: 0px 0px 20px rgb(187, 255, 0);
+  }

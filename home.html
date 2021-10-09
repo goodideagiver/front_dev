@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="prplblck">
-    <meta name="description" content="This webpage is a home to adot.pl a web service owned my Adot art">
-
-    <meta property="og:title" content="Adot.pl ADOT ART Graphic Designer" />
-    <meta property="og:url" content="https://www.adot.pl/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description"
-        content="ADOT ART - Graphic designer, check this website to see the best artist your money can buy." />
-    <meta property="og:image" content="https://i.ibb.co/h7G9BB1/Ea7d58126632393-613110bdc9a74.png" />
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <title>ADOT ART</title>
+        <link rel="stylesheet" href="home.css">
+        <script src="script.js"></script> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Adot.pl</title>
 </head>
-
-<body id="Home">
-    <div class="topnav">
-        <a href="#Home" class="active">ADOT ART - Adot.pl</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="#Home">Home</a>
-            <a href="#Portfolio">Portfolio</a>
-            <a href="#prices">Price list</a>
-            <a href="#Contact">Contact</a>
+<body>
+    <div id="navbar">
+        <div>
+            <a href="#home">Home</a>
+            <a href="#price">Price list</a>
+            <a href="#contact">Contact</a>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-            <i class="material-icons" style="color: black;">menu</i>
-        </a>
-    </div>
-    <nav>
-        <ul class="horizontal">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#prices">Price list</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <li style="display: none;"><button id="dark-toggle" onclick="myFunction()">Switch mode</button></li>
-        </ul>
-    </nav>
-    <header id="test">    
-        <div class="foto-header">
-            <img src="foto.png">
+      </div> 
+    <header id="home">
+        <div class="header-container">
+            <div id="photo"><img src="foto.png" alt=""></div>
+            <div id="welcome">
+                <div>
+                    <p>Hi, I'm</p>
+                    <h1>ADOT ART</h1>
+                    <p>I'm a Polish graphic designer. </p>
+                </div>
+            </div>
         </div>
-        <div class="vertical-center">
-            <a>Hi, I'm</a>
-            <h1>ADOT ART</h1>
-            <a>I'm a Polish graphic designer.<br><br><a class="[" href="#Aboutme">Learn more</a></a>
-        </div>
-
     </header>
-    <div class="bottom-el-container">
-        <section id="Portfolio">
-
-            <div class="section-portfolio">
-                <h1>Portfolio</h1>
-                <a class="text-box">
+    <div class="page-container">
+        <section id="portfolio" style="display: none;">
+            <div class=" tbox-margin">
+                <h2>Portfolio</h2>
+                <div class="text-box">
                     <ul>
                         <li>
                             <span class="material-icons">
@@ -101,127 +73,134 @@
 
                         </li>
                     </ul>
-                </a>
+                </div>
             </div>
         </section>
-        <section id="prices">
-            <div class="tableheader">
-                <!-- <h1 style="text-shadow: 0px 0px 100px yellow; color: orange;">SALE</h1> -->
-                <h1>Price list</h1>
-                <p>(read <a href="#limitations">limitations</a>)</p>
-            </div>
-            <table>
-                <tbody>
-                    <tr>
-                        <th>Art type</th>
-                        <th>Price</th>
-                        <th>Eg.</th>
-                    </tr>
-                    <tr>
-                        <td>Headshot sketch</td>
-                        <td>$15.00</td>
+        <section id="price">
+            <div class=" tbox-margin">
+                <h2>Price list</h2>
+                <div class="text-box">
+                    <div class="price-table">
                         <div>
-                            <td><img src="images/pricetable/simple-portrait.png" /></td>
+                            <img src="images/pricetable/simple-portrait.png" />
+                            <div>
+                                <p>Headshot sketch</p>
+                                <p>$15.00</p>
+                            </div>
                         </div>
-                    </tr>
-                    <tr>
-                        <td>Headshot </td>
-                        <td>$20.00</td>
-                        <td><img src="images/pricetable/portrait.png" /></td>
-                    </tr>
-                    <tr>
-                        <td>Additional character (any art type)</td>
-                        <td>$10.00 - $20.00</td>
-                        <td><img src="images/pricetable/portrait+char.png"/></td>
-                    </tr>
-                    <tr>
-                        <td>Halfbody </td>
-                        <td>$25.00</td>
-                        <td><img src="images/pricetable/halfbody-simple-bg.png" /></td>
-                    </tr>
-                    <tr>
-                        <td>Halfbody + background</td>
-                        <td>$30.00</td>
-                        <td><img src="images/pricetable/halfbody-detailed-bg.png" /></td>
-                    </tr>
-                    <tr>
-                        <td>Fullbody </td>
-                        <td>$35.00</td>
-                        <td><img src="images/pricetable/fullbody-simple-bg.png" /></td>
-                    </tr>
-                    <tr>
-                        <td>Fullbody + backgroud</td>
-                        <td>$40.00</td>
-                        <td><img src="images/pricetable/fullbody-detailed-bg.jpg.png" /></td>
-                    </tr>
-                    <tr>
-                        <td>Simple avatar</td>
-                        <td>$15.00</td>
-                        <td><img src="images/pricetable/avatar.png" /></td>
-                    </tr>
-                    <tr>
-                        <td>Emote (each)</td>
-                        <td>$12.00</td>
-                        <td><img src="images/pricetable/emote.PNG" /></td>
-                    </tr>
-                    <tr>
-                        <td>Twitch badges (set of 7)</td>
-                        <td>$15.00</td>
-                        <td><img src="images/pricetable/badge.PNG" /></td>
-                    </tr>
-                    <tr>
-                        <td>Simple gif</td>
-                        <td>$50.00</td>
-                        <td><img src="images/pricetable/simple-gif.gif" /></td>
-                    </tr>
-                </tbody>
-            </table>
-            <ul style="margin: auto;">
-                <h2 id="limitations">Limitations</h2>
-                <li><i class="material-icons">block</i>
-                    <div>No hate related</div>
-                </li>
-                <li><i class="material-icons">block</i>
-                    <div>No racism</div>
-                </li>
-                <li><i class="material-icons">block</i>
-                    <div>No NSFW</div>
-                </li>
-            </ul>
+                        <div>
+                            <img src="images/pricetable/portrait.png" />
+                            <div>
+                                <p>Headshot</p>
+                                <p>$20.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/pricetable/portrait+char.png"/>
+                            <div>
+                                <p>Additional character (any art type)</p>
+                                <p>$10.00 - $20.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/pricetable/halfbody-simple-bg.png" />
+                            <div>
+                                <p>Halfbody</p>
+                                <p>$25.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/pricetable/halfbody-detailed-bg.png" />
+                            <div>
+                                <p>Halfbody + background</p>
+                                <p>$30.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/pricetable/fullbody-simple-bg.png" />
+                            <div>
+                                <p>Fullbody</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/pricetable/fullbody-detailed-bg.jpg.png" />
+                            <div>
+                                <p>Fullbody + backgroud</p>
+                                <p>$40.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/pricetable/avatar.png" />
+                            <div>
+                                <p>Simple avatar</p>
+                                <p>$15.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/pricetable/emote.PNG" />
+                            <div>
+                                <p>Emote (each)</p>
+                                <p>$12.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/pricetable/badge.PNG" />
+                            <div>
+                                <p>Twitch badges (set of 7)</p>
+                                <p>$15.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/pricetable/simple-gif.gif" />
+                            <div>
+                                <p>Simple gif</p>
+                                <p>$50.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Limitations</h2>
+                <div class="bottom-container">
+                    <p class="text-box"><i class="material-icons">block</i>NSFW</p>
+                    <p class="text-box"><i class="material-icons">block</i>Racism</p>
+                    <p class="text-box"><i class="material-icons">block</i>Hate related</p>
+                </div>
+            </div>
         </section>
-        <div class="section-next-to">
-            <section id="Aboutme">
-                <h1>About me</h1>
-                <div class="text-box">
-                    <a>Let me introduce myself. My name is Magdalena. I've got bachelor's degree in graphic design. I've
-                        been drawing and painting not only digitally but on paper as well since I was 6 years old. Some
-                        of my works are available to the public view on my social media or the portfolio section of this
-                        website. Feel free to check out my portfolio by clicking the button below.</a>
+        <section class="bottom-container">
+            <div>
+                <div>
+                    <h2>About</h2>
+                    <div class="text-box">
+                        <p>Let me introduce myself. My name is Magdalena. I've got bachelor's degree in graphic design. I've been drawing and painting not only digitally but on paper as well since I was 6 years old. Some of my works are available to the public view on my social media or the portfolio section of this website. Feel free to check out my portfolio by clicking the button below.</p>
+                    </div>
                 </div>
-                <a class="gold-button" href="#Portfolio">My portfolio</a>
-            </section>
-            <section id="Contact" style="display: block;">
-                <h1>Contact</h1>
-                <div class="text-box">
-                    <a>
-                        You can email me directly at <u>adottart@gmail.com</u> or through my other social media. I'd
-                        prefer if you contacted me through email though.
-                    </a>
+                <div>
+                    <a class="button" href="#portfolio">Portfolio</a>
                 </div>
-                <div style="display: flex; flex-wrap: nowrap;justify-content: center;">
-                    <a class="gold-button" href="mailto:adottart@gmail.com">
-                        Click to open email app
-                    </a>
-                    <a class="normal-button" rel="noopener noreferrer" target="_blank"
-                        href="https://www.adot.pl/link">Social media
-                    </a>
+            </div>
+            <div>
+                <div id="contact">
+                    <h2>Contact</h2>
+                    <div class="text-box">
+                        <p>You can email me directly at <a href="mailto:adottart@gmail.com">adottart@gmail.com</a> or through my other social media. I'd prefer if you contacted me through email though. </p>
+                    </div>
                 </div>
-            </section>
-        </div>
-    </div class="bottom-el-container">
-    <div class="mobile-footer-nav">
-        <a href="mailto:adottart@gmail.com"><i class="material-icons">forward_to_inbox</i> Contact</a>
+                <div>
+                    <div>
+                        <a class="button" href="mailto:adottart@gmail.com">Email</a>
+                    </div>
+                    <div>
+                        <a class="button" rel="noopener noreferrer" target="_blank"
+                        href="https://www.adot.pl/link">Social media</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p class="poweredby">POWERED BY <a href="https://www.twitch.tv/prpl_blck" rel="noopener noreferrer" target="_blank">PRPLBLCK</a></p>
+        </section>
     </div>
 </body>
-
 </html>
