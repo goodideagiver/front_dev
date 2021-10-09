@@ -1,0 +1,127 @@
+:root {
+    --main-bg-color:#301b5c;
+    --section-bg-color:#822768;
+    --main-text-color:white;
+    --special-button-color:#ffb754;
+    --button-hover-bg:lightblue;
+    --button-hover-text:black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+html {
+    background-image: url(images/stars.png);
+    background-repeat: tile;
+    background-size: 100%;
+}
+
+.stars {
+    background-image: linear-gradient(black,#301b5c,#301b5c);
+    background-repeat: tile;
+    background-size: 1080px;
+}
+
+body{
+    background: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+}
+header h1{
+    font-size: 3rem;
+    color: var(--main-text-color); 
+    margin: 1rem 1rem 1rem 1rem;
+}
+.golden{
+    text-align: center;
+    padding: 1rem 2rem;
+    background:var(--special-button-color);
+    border-radius: 2rem;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    margin: 1rem;
+    transition: background-color 0.5s,color 0.5s;
+    max-width: 900px;
+}
+
+.golden:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-text);
+}
+
+div{
+    width: 100%;
+    height: fit-content;
+    position:relative;
+    padding: 2rem 1rem 0rem 1rem;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--section-bg-color);
+    border-radius: 2rem;
+    max-width: 900px;
+}
+div h2{
+    color: white;
+}
+div ul{
+    list-style: none;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+}
+div ul li{
+    margin: 0.5rem;
+    width: 100%;
+
+}
+div ul li a{
+    width: 100%;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: background-color 0.5s,color 0.5s;
+    background: #c34664;
+}
+
+div ul li a:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-text);
+}
+
+.powered{
+    font-size: 0.8rem;
+    color: rgb(70, 70, 70);
+}
+.powered a{
+    text-decoration: none;
+    color: purple;
+}
+
+.powered a:hover {
+    text-decoration: underline;
+}
+

@@ -8,3 +8,8 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 } 
+
+
+function notYet() {
+  alert("Sorry, this section is not finished yet");
+}
