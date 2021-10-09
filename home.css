@@ -165,7 +165,7 @@ p.text-box {
 
 .price-table div div {
     max-width: none;
-    background-color: gold;
+    background-color: #ffb754;
     color: rgb(0, 0, 0);
     font-weight: bolder;
     padding: 10px;
@@ -223,6 +223,10 @@ p.text-box {
 
     .bottom-container {
         display: block;
+    }
+
+    #limitations {
+        display: flex;
     }
 
     .bottom-container div {
