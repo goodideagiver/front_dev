@@ -177,11 +177,14 @@ p.text-box {
 }
 
 .price-table img {
+    
     width: 100%;
     max-width: max-content;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.116);
     vertical-align: bottom;
     transition: all 0.5s;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .price-table img:hover {
@@ -269,6 +272,14 @@ p.text-box {
 
     .price-table > div {
         max-width: 40%;
+    }
+
+    .price-table div div {
+        padding: 5px;
+    }
+
+    .price-table div div p {
+        font-size: 2.6vw;
     }
 }
 
