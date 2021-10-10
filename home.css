@@ -190,6 +190,7 @@ p.text-box {
 .price-table img:hover {
     box-shadow: 0px 0px 5px #000000;
     opacity: 80%;
+    object-fit: scale-down;
     transform: scale(1.02);
 }
 
