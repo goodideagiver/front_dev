@@ -169,12 +169,24 @@ p.text-box {
     color: rgb(0, 0, 0);
     font-weight: bolder;
     padding: 10px;
+}
 
+.price-table div div p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
 }
 
 .price-table img {
     width: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185);
+    max-width: max-content;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.116);
+    vertical-align: bottom;
+    transition: all 0.5s;
+}
+
+.price-table img:hover {
+    box-shadow: 0px 0px 5px #000000;
+    opacity: 80%;
 }
 
 #portfolio ul {
