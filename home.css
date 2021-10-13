@@ -197,26 +197,6 @@ p.text-box {
     transform: scale(1.02);
 }
 
-#portfolio ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-evenly;
-}
-
-#portfolio ul li {
-    display: flex;
-    flex-basis: 45%;
-}
-
-#portfolio ul li span{
-    margin-right: 10px;
-}
-
 #portfolio div.text-box {
     display: flex;
     flex-wrap: wrap;
@@ -322,6 +302,7 @@ p.text-box {
 
     .portfolio-segment {
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .portfolio-segment img {
