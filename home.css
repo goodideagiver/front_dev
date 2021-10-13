@@ -190,7 +190,6 @@ p.text-box {
 .price-table img:hover {
     box-shadow: 0px 0px 5px #000000;
     opacity: 80%;
-    object-fit: scale-down;
     transform: scale(1.02);
 }
 
@@ -214,6 +213,39 @@ p.text-box {
     margin-right: 10px;
 }
 
+#portfolio div.text-box {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10vh;
+}
+
+.portfolio-segment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.portfolio-segment div {
+    flex-basis: 40%;
+}
+
+.portfolio-segment img {
+    width: 100%;
+}
+
+.portfolio-segment a:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+}
+
+.separate {
+    background-color: #333;
+    height: 1px;
+    width: 100%;
+}
+
 /*Layout mobilny*/
 
 @media screen and (max-width:800px) {
@@ -224,10 +256,6 @@ p.text-box {
     .header-container {
         width: 100%;
         flex-wrap: wrap;
-    }
-
-    .header-container > div {
-        
     }
 
     .header-container > div div h1 {
@@ -282,6 +310,14 @@ p.text-box {
     .price-table div div p {
         font-size: 2.6vw;
     }
+
+    .portfolio-segment {
+        flex-direction: column;
+    }
+
+    .button {
+        margin: 20px 50px;
+    }
 }
 
 /*Layout mobilny end*/
@@ -329,4 +365,23 @@ p.text-box {
   .poweredby a:hover {
       color: gold;
       text-shadow: 0px 0px 20px rgb(187, 255, 0);
+  }
+
+  /* slider */
+
+  #slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  }
+  
+  #slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
   }

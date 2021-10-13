@@ -13,4 +13,3 @@ window.onscroll = function() {
 function notYet() {
   alert("Sorry, this section is not finished yet");
 }
-
