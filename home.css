@@ -180,20 +180,19 @@ p.text-box {
     text-align: left;
 }
 
-.price-table img {
-    
+.price-table img { 
+    aspect-ratio: 1/1;
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.116);
     vertical-align: bottom;
     transition: all 0.5s;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    object-fit:contain;
+    background-color: #ffb754;
 }
 
 .price-table img:hover {
     box-shadow: 0px 0px 5px #000000;
     opacity: 80%;
-    transform: scale(1.02);
 }
 
 #portfolio div.text-box {
@@ -227,6 +226,7 @@ p.text-box {
     background-color: #333;
     height: 1px;
     width: 100%;
+    margin: 50px 0px;
 }
 
 /*Layout mobilny*/
@@ -302,12 +302,21 @@ p.text-box {
     .portfolio-segment {
         flex-direction: column;
         flex-wrap: nowrap;
+        row-gap: 50px;
     }
 
-    .portfolio-segment img {
-        max-height: 100vh;
+    .portfolio-segment div {
+        align-items: center;
+    }
+
+    .portfolio-margin {
+        margin: 0px auto;
+    }
+
+    .portfolio-segment div img {
         object-fit: scale-down;
-        margin: auto;
+        width: auto;
+        max-width: 100%;
     }
 
     .button {
