@@ -14,6 +14,10 @@ body {
     
 }
 
+#navbar {
+    z-index: 50;
+}
+
 #navbar > div {
     display: flex;
     justify-content: center;
