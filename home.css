@@ -257,6 +257,11 @@ p.text-box {
         width: 100%;
     }
 
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .header-container {
         width: 100%;
         flex-wrap: wrap;
