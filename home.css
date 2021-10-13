@@ -271,7 +271,7 @@ p.text-box {
     }
 
     #limitations {
-        display: flex;
+        margin: 10px;
     }
 
     .bottom-container div {
@@ -313,6 +313,11 @@ p.text-box {
 
     .portfolio-segment {
         flex-direction: column;
+    }
+
+    .portfolio-segment img {
+        max-height: 100vh;
+        object-fit: scale-down;
     }
 
     .button {
