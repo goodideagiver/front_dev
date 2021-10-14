@@ -384,7 +384,11 @@ p.text-box {
     }
 
     body {
-        background-image: url("images/bg-placeholder.png"), linear-gradient(rgb(60, 46, 121),rgb(0, 0, 0), rgb(0, 0, 0));
+        background-image: url("images/bg-placeholder.png"), linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    }
+
+    header {
+        background-image: url("images/dark-header-bg.png"),linear-gradient(rgba(60, 46, 121, 0.507) 50%, rgb(0, 0, 0));
     }
 
     .header-container > div div p {
@@ -426,11 +430,19 @@ p.text-box {
       }
 
       body {
-        background-image: url("images/bg-placeholder.png"), linear-gradient(#1d136a, #0d0548);
+        background-image: url("images/bg-placeholder.png"), linear-gradient(#150f44 1%, #131122);
     }
-
+    
+    header {
+        background-image: url(images/dark-header-bg.png),linear-gradient(rgba(0, 0, 0, 0.308),rgba(0, 0, 0, 0));
+    }
     .price-table div div {
         background-color: #333;
+    }
+
+    .text-box {
+        background-image: url(images/bg-placeholder.png);
+        background-attachment: fixed;
     }
 
   }
