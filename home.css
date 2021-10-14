@@ -184,7 +184,6 @@ p.text-box {
     aspect-ratio: 1/1;
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.116);
-    vertical-align: bottom;
     transition: all 0.2s;
     object-fit:cover;
     background-color: #ffb754;
@@ -377,7 +376,11 @@ p.text-box {
 
   @media (prefers-color-scheme: dark) {
     * {
-        color: white;
+        color: #ffffff70;
+    }
+
+    h1,h2 {
+        color: #ffffff;
     }
 
     body {
@@ -388,6 +391,8 @@ p.text-box {
         color: #ffb754;
         text-shadow:1px 1px 5px rgb(0, 0, 0);
     }
+
+
 
     .text-box {
         background-color: rgb(41, 41, 41);
@@ -402,7 +407,12 @@ p.text-box {
     }
 
     .price-table div div {
-        background-color: magenta;
+        background-color: rgb(92, 0, 92);
+        
+    }
+
+    .price-table div div p {
+        color: #ffffff;
     }
 
     .price-table img {
