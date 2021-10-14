@@ -409,3 +409,18 @@ p.text-box {
         background-color: #414141;
     }
   }
+
+  @media (prefers-color-scheme: dark) and (max-width:1000px) {
+      .text-box {
+          background-color: black;
+      }
+
+      body {
+        background-image: url("images/bg-placeholder.png"), linear-gradient(#1d136a, #0d0548);
+    }
+
+    .price-table div div {
+        background-color: #333;
+    }
+
+  }
