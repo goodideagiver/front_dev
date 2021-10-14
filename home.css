@@ -402,4 +402,8 @@ p.text-box {
     .price-table div div {
         background-color: magenta;
     }
+
+    .price-table img {
+        background-color: #414141;
+    }
   }
