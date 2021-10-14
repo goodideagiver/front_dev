@@ -185,14 +185,16 @@ p.text-box {
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.116);
     vertical-align: bottom;
-    transition: all 0.5s;
-    object-fit:contain;
+    transition: all 0.2s;
+    object-fit:cover;
     background-color: #ffb754;
+    display: block;
+    margin: auto;
 }
 
 .price-table img:hover {
     box-shadow: 0px 0px 5px #000000;
-    opacity: 80%;
+    opacity: 60%;
 }
 
 #portfolio div.text-box {
