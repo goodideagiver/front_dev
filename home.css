@@ -436,13 +436,9 @@ p.text-box {
     header {
         background-image: url(images/dark-header-bg.png),linear-gradient(rgba(0, 0, 0, 0.308),rgba(0, 0, 0, 0));
     }
+    
     .price-table div div {
         background-color: #333;
-    }
-
-    .text-box {
-        background-image: url(images/bg-placeholder.png);
-        background-attachment: fixed;
     }
 
   }
