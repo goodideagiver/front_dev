@@ -47,7 +47,9 @@ html,body {
      min-width: 1000px;
  }
 
-
+.holder {
+    display: flex;
+}
 
 section {
     flex-basis: 100%;
