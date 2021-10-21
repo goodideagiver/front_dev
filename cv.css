@@ -78,6 +78,11 @@ section {
     width: fit-content;
 }
 
+.icon-img {
+    width: 16px;
+    height: 16px;
+}
+
 .work-box li {
     font-size: 0.9rem;
 }
