@@ -1,10 +1,13 @@
-body,header {
-    background-image: none;
+
+* {
+    font-size: 16px;
+    font-family: arial;
 }
 
- body {
+html,body {
+    margin: 0px;
+}
 
- }
 
  header {
      background-color: brown;
@@ -14,22 +17,38 @@ body,header {
 
  .header-container {
      padding: 30px;
+     display: flex;
+     max-width: 1200px;
+     margin: auto;
  }
 
 .header-container div div{
     display: block;
+   
 }
 
 .header-container > div {
+    display: flex;
     flex-direction: column;
     color: white;
     justify-content:space-evenly;
     text-align: justify;
+    flex-basis: 100%;
+    
+}
+
+.header-container div img {
+    margin: auto;
 }
 
  .page-container {
      max-width: 1260px;
+     margin: auto;
+     min-width: 1000px;
  }
+
+
+
 section {
     flex-basis: 100%;
     padding: 15px 15px;
@@ -38,6 +57,7 @@ section {
 .text-box {
     padding: 4.5vh;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.281);
+    border-radius: 25px;
 }
 
 .text-box h1 {
@@ -69,4 +89,28 @@ section {
 .work-points li {
     padding-left: 30px;
     color: rgb(111, 111, 111);
+}
+
+.icons-holder {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border-radius: 50px;
+    justify-content: center;
+    width: 350px;
+    margin: auto;
+    background-color: lightgray;
+    margin-bottom: 40px;
+}
+
+.icons-holder h1 {
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+}
+
+.icons-holder span {
+    display: block;
+    margin-right: 10px;
 }
