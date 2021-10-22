@@ -13,3 +13,8 @@ window.onscroll = function() {
 function notYet() {
   alert("Sorry, this section is not finished yet");
 }
+
+function foldSection(clicked_id) {
+  var element = document.getElementById(clicked_id);
+  element.classList.toggle("fold-text-box");
+}

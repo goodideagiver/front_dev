@@ -102,6 +102,10 @@ section {
     min-height: 140px;
 }
 
+.fold-text-box {
+    display: none !important;
+}
+
 p.text-box {
     display: block;
     min-height: 0px;
@@ -425,11 +429,11 @@ p.text-box {
   }
 
   @media (prefers-color-scheme: dark) and (max-width:1000px) {
-      .text-box {
-          background-color: black;
-      }
+    .text-box {
+        background-color: black;
+    }
 
-      body {
+    body {
         background-image: url("images/bg-placeholder.png"), linear-gradient(#150f44 1%, #131122);
     }
     
