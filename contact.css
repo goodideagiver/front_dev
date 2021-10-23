@@ -13,6 +13,7 @@ html {
     background-image: url("images/bg-placeholder.png"), linear-gradient(rgb(121, 121, 205), rgb(224, 175, 213));
     background-size: contain;
     background-color: rgba(121,121,205,1);
+    background-attachment: fixed;
 }
 
 body {
