@@ -10,8 +10,9 @@
 
 
 html {
-    background-image: url("images/bg-placeholder.png"), linear-gradient(rgba(121,121,205,1), rgba(224,175,213,1));
-    background-size: cover;
+    background-image: url("images/bg-placeholder.png"), linear-gradient(rgba(121, 121, 205, 0), rgba(224, 175, 213, 0));
+    background-size: contain;
+    background-color: rgba(121,121,205,1);
 }
 
 body {
@@ -86,7 +87,7 @@ input,textarea {
       margin: 0px;
   }
 
-  .next-to a {
+  .next-to a,.next-to button {
     flex-basis: 100%;
   }
 
@@ -96,4 +97,8 @@ input,textarea {
 
 #link-to-ref input{
     background-color: bisque;
+}
+
+button {
+    border: none;
 }
