@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="prplblck">
+    <meta name="description" content="This webpage is a home to adot.pl a web service owned my Adot art">
+    <meta property="og:title" content="Adot.pl | Contact" />
+    <meta property="og:url" content="https://www.adot.pl/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="ADOT ART - Graphic designer, check this website to see the best artist your money can buy." />
+    <meta property="og:image" content="https://i.ibb.co/h7G9BB1/Ea7d58126632393-613110bdc9a74.png" />
+	<title>ADOT ART</title>
+
+        <link rel="stylesheet" href="contact.css">
+        <script src="script.js"></script> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="lightbox2-2.11.3/src/css/lightbox.css">
+        <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
+
+        <script>
+        lightbox.option({
+            'disableScrolling':true
+        })
+        </script>
+
+    <title>Adot.pl | Contact</title>
+</head>
+<body class="page-container">
+    <header>
+        <div>
+            <a href="http://adot.pl" class="button"><span class="material-icons">
+                home
+                </span>Home</a>
+        </div>
+    </header>
+    <section>
+        <form name="contact" method="POST" data-netlify="true">
+            <div>
+                <p>Name or nickname</p>
+                <input type="text" name="name" rows="1"></input>
+            </div>
+            <div>
+                <p>Your E-mail address:</p>
+                <input type="email" name="mail" rows="1"></input>
+            </div> 
+            <div>
+                <label for="contact-type">Art type: </label>
+                <select id="contact-type" name="contact-type">
+                  <option value="custom">custom</option>
+                  <option value="Headshot sketch">Headshot sketch</option>
+                  <option value="Headshot">Headshot</option>
+                  <option value="Halfbody">Halfbody</option>
+                  <option value="Halfbody + background">Halfbody + background</option>
+                  <option value="Fullbody">Fullbody</option>
+                  <option value="Fullbody + backgroud">Fullbody + backgroud</option>
+                  <option value="Simple avatar">Simple avatar</option>
+                  <option value="Twitch Emote">Twitch Emote</option>
+                  <option value="Twitch badges (set of 7)">Twitch badges (set of 7)</option>
+                  <option value="Simple gif">Simple gif</option>
+                </select> 
+            </div>
+            <div>
+                <p>Additional order details:</p>
+                <textarea name="message" rows="3" class="message-field"></textarea>
+            </div>
+            <div id="link-to-ref" class="fold-text-box">
+                <p>Link to your reference:</p>
+                <input type="url" name="reference" rows="1"></input>
+            </div>
+            <div class="next-to">
+                <a class="button" onclick="foldSection('link-to-ref')">Add reference</a>
+                <a class="button" href="" onclick="">Submit</a>
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>
