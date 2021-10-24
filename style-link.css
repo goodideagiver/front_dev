@@ -44,7 +44,6 @@ body{
 header h1{
     font-size: 3rem;
     color: var(--main-text-color); 
-    margin: 1rem 1rem 1rem 1rem;
 }
 .golden{
     text-align: center;
@@ -123,5 +122,57 @@ div ul li a:hover {
 
 .powered a:hover {
     text-decoration: underline;
+    text-shadow: 0px 0px 30px #ffb754;
+    color: white;
 }
 
+html,body {
+    background-image: url("images/bg-placeholder.png"), linear-gradient(rgb(121, 121, 205), rgb(224, 175, 213));
+    background-size:cover;
+    background-color: rgba(121,121,205,1);
+    background-attachment: fixed;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+    background-color: white;
+    width: 90%;
+}
+
+div h2 {
+    color: black;
+}
+
+header h1 > a {
+    font-size: 45px;
+    text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    .button {
+        background-color: rgba(255, 0, 255, 0.534);
+    }
+
+    form,div {
+        background-color: rgb(41, 41, 41);
+        color: white;
+    }
+
+    html,body {
+        background-image: url("images/bg-placeholder.png"), linear-gradient(rgb(18, 18, 39), rgb(41, 32, 39));
+        background-color: black;
+    }
+
+    input,textarea {
+        background-color: #797979;
+    }
+
+    div h2 {
+        color: white;
+    }
+}
