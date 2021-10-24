@@ -32,7 +32,7 @@
 
         setTimeout(function(){
             window.location.href = 'http://adot.pl';
-         }, 5000);
+         }, 15000);
         </script>
 
         <style>
@@ -46,6 +46,9 @@
             animation: gradient 6s ease infinite;
             }
 
+            a > img {
+                width: 30px;
+            }
 
 
 @keyframes gradient {
@@ -65,16 +68,18 @@
 </head>
 <body class="page-container">
     <header>
-        <div>
-            <a href="http://adot.pl" class="button"><span class="material-icons">
-                home
-                </span>Home</a>
-        </div>
     </header>
     <section>
         <form name="contact" action="succes.html" data-netlify="true">
             <p>
-                <b>Your message has been submitted</b><br><br>Wait 5 seconds to be automatically redirected to Adot.pl
+                <b>Your message has been submitted</b><br><br>Dm me on instagram or discord to confirm the order
+            </p>
+            <div class="next-to">
+                <a href="https://discordapp.com/users/340135757572472832/" class="button"><img src="images/social-media-icons/icon_clyde_black_RGB.png" alt="" srcset=""></a>
+                <a href="https://www.instagram.com/adott_art/" class="button"><img src="images/social-media-icons/5279112_camera_instagram_social media_instagram logo_icon.png" alt="" srcset=""></a>
+            </div>
+            <p>
+                Wait 15 seconds to be automatically redirected to Adot.pl
             </p>
         </form>
     </section>
