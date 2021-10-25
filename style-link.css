@@ -131,12 +131,8 @@ html,body {
     background-size:cover;
     background-color: rgba(121,121,205,1);
     background-attachment: fixed;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 div {
