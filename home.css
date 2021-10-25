@@ -36,9 +36,9 @@ header {
 
 header img {
     border-radius: 50%;
-    width: 100%;
-    min-width: 380px;
     border: 2px solid white;
+    max-height: 50vh;
+
 }
 
 h2 {
@@ -239,7 +239,6 @@ p.text-box {
     bottom:4vh;
     right: 4vw;
     width: 200px;
-    
 }
 
 #floating-contact a {
@@ -248,6 +247,53 @@ p.text-box {
     
 }
 
+
+
+#navbar {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .poweredby {
+      font-weight: bolder;
+      color: gray;
+      text-align: center;
+      
+  }
+
+  .poweredby p {
+    width: 100%;
+   
+  }
+
+  .poweredby a {
+      color: purple;
+      text-decoration: none;
+      transition: all 1s;
+  }
+
+  .poweredby a:hover {
+      color: gold;
+      text-shadow: 0px 0px 20px rgb(187, 255, 0);
+  }
+
 /*Layout mobilny*/
 
 @media screen and (max-width:800px) and (orientation: portrait), (max-width:1000px) {
@@ -255,6 +301,9 @@ p.text-box {
         display: block;
     }
 
+    #navbar a{
+        padding: 5px;
+    }
 
     .page-container {
         width: 100%;
@@ -299,7 +348,6 @@ p.text-box {
     }
 
     header img {
-        width: 80%;
         min-width: 50px;
     }
 
@@ -349,51 +397,6 @@ p.text-box {
 }
 
 /*Layout mobilny end*/
-
-#navbar {
-    background-color: #333; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    top: 0; /* Stay on top */
-    width: 100%; /* Full width */
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  }
-  
-  /* Style the navbar links */
-  #navbar a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-  }
-  
-  #navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .poweredby {
-      font-weight: bolder;
-      color: gray;
-      text-align: center;
-      
-  }
-
-  .poweredby p {
-    width: 100%;
-   
-  }
-
-  .poweredby a {
-      color: purple;
-      text-decoration: none;
-      transition: all 1s;
-  }
-
-  .poweredby a:hover {
-      color: gold;
-      text-shadow: 0px 0px 20px rgb(187, 255, 0);
-  }
 
   /*Dark mode*/
 
