@@ -11,7 +11,6 @@ window.onscroll = function() {
     } else {
       document.getElementById("floating-contact").style.opacity = "0";
     }
-    console.log(window.scrollY);
   prevScrollpos = currentScrollPos;
   
 } 
