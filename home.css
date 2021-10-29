@@ -250,10 +250,14 @@ p.text-box {
 #floating-contact a {
     margin: 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
-    
+    animation: contact-button 1s infinite ease-in-out;
 }
 
-
+@keyframes contact-button {
+    0% {box-shadow: none;transform: scale(1);}
+    50% {box-shadow: 0px 0px 25px gold;transform: scale(1.1);}
+    100% {box-shadow: none;transform: scale(1);}
+}
 
 #navbar {
     background-color: #333; /* Black background color */
