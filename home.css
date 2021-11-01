@@ -155,7 +155,7 @@ p.text-box {
 }
 
 
-@media screen (min-width: 1000px){
+@media screen and (min-width: 1000px){
     .slide-btn:hover {
         background-color: #00000021;
     }
@@ -329,9 +329,8 @@ p.text-box {
 #floating-contact {
     display: none;
     position: fixed;
-    bottom:4vh;
-    right: 4vw;
-    width: 200px;
+    bottom:0px;
+    width: 100%;
     transition: all 1s;
     opacity: 0;
 }
@@ -339,7 +338,13 @@ p.text-box {
 #floating-contact a {
     margin: 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
-    animation: contact-button 1s infinite ease-in-out;
+    /* animation: contact-button 1s infinite ease-in-out; */
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#floating-contact span {
+    background-color: black;
 }
 
 @keyframes contact-button {
@@ -397,7 +402,8 @@ p.text-box {
 
 @media screen and (max-width:800px) and (orientation: portrait), (max-width:1000px) {
     #floating-contact {
-        display:block;
+        display:grid;
+        grid-template-columns: auto 1% 49%;
     }
 
     #navbar a{
