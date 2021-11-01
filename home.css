@@ -379,6 +379,11 @@ p.text-box {
         width: 100%;
     }
 
+    section {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
     html, body {
         max-width: 100%;
         overflow-x: hidden;
@@ -402,16 +407,21 @@ p.text-box {
     }
 
     #limitations {
-        margin: 10px;
+        display: flex;
+        gap: 2%;
+    }
+
+    #limitations .text-box {
+        padding: 10px;
     }
 
     .bottom-container div {
         margin: 10px 0px;
     }
 
-    .text-box {
+    /* .text-box {
         border-radius: 0px;
-    }
+    } */
 
     .tbox-margin {
         margin: 0px;
@@ -510,6 +520,7 @@ p.text-box {
 
     .text-box {
         background-color: rgb(41, 41, 41);
+        box-shadow: #0000004b 0px 0px 10px;
     }
 
     .separate {
@@ -522,7 +533,7 @@ p.text-box {
 
     .price-table div div {
         background-color: rgb(92, 0, 92);
-        
+        box-shadow: #000000a8 0px 0px 10px;
     }
 
     .price-table div div p {
@@ -535,9 +546,10 @@ p.text-box {
   }
 
   @media (prefers-color-scheme: dark) and (max-width:1000px) {
-    .text-box {
+    /* .text-box {
         background-color: black;
-    }
+    } 
+    */
     
     .price-table div div {
         background-color: #333;
