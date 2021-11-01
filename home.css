@@ -129,21 +129,57 @@ p.text-box {
     object-fit: cover;
     animation: infinite slide-gallery 20s ease-in-out;
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     border-radius: 25px;
 }
 
-@keyframes slide-gallery {
-    25%{opacity: 1;} 
-    40%{opacity:0;}
-} 
+.slide-btn {
+    background-color:  transparent;
+    color: rgb(255, 255, 255);
+    border: none;
 
-.animation-gallery img:nth-child(4){animation-delay:0s;}
-.animation-gallery img:nth-child(3){animation-delay:5s;}
-.animation-gallery img:nth-child(2){animation-delay:10s;}
-.animation-gallery img:nth-child(1){animation-delay:15s;}
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 100%;
+    width: 30%;
 
+    transition: background-color 0.2s;
+    text-shadow:0px 0px 20px black;
+}
 
+.slide-btn:hover {
+    background-color: #00000021;
+}
+
+.slide-btn:active {
+    background-color: rgba(255, 255, 255, 0.432);
+    color: black;
+}
+
+.slide-btn .material-icons {
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 40px;
+}
+
+.bt-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+}
+
+.bt-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+}
 
 /* nie uzywane */
 

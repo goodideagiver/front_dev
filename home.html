@@ -23,6 +23,8 @@
         <!-- LIGHTBOX -->
         <link rel="stylesheet" href="lightbox2-2.11.3/src/css/lightbox.css">
         <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
+        <!-- w3 slide -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script>
         lightbox.option({
             'disableScrolling':true
@@ -55,10 +57,13 @@
             <div class=" tbox-margin">   
                 <h2>Gallery</h2>
                 <div id="portfolio-text" class="animation-gallery">
-                    <img src="images/gallery/adot.jpg" alt="slide 1">
-                    <img src="images/gallery/Diluc.png" alt="slide 2">
-                    <img src="images/gallery/neji.png" alt="slide 3">
-                    <img src="images/gallery/pisces.JPG" alt="slide 4">
+                    <img class="mySlides" src="images/gallery/adot.jpg" alt="slide 1">
+                    <img class="mySlides" src="images/gallery/Diluc.png" alt="slide 2">
+                    <img class="mySlides" src="images/gallery/neji.png" alt="slide 3">
+                    <img class="mySlides" src="images/gallery/pisces.JPG" alt="slide 4">
+
+                    <button class="slide-btn bt-left" onclick="plusDivs(-1)"><span class="material-icons">achevron_left</span></button>
+                    <button class="slide-btn bt-right" onclick="plusDivs(1)"><span class="material-icons">chevron_right</span></button>
                 </div>
                 <a style="display: none;" class="button" onclick="foldSection('portfolio-text')">Show/Hide</a>
             </div>
