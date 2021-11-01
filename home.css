@@ -153,8 +153,11 @@ p.text-box {
     text-shadow:0px 0px 20px black;
 }
 
-.slide-btn:hover {
-    background-color: #00000021;
+
+@media screen (min-width: 1000px){
+    .slide-btn:hover {
+        background-color: #00000021;
+    }
 }
 
 .slide-btn:active {
