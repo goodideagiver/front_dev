@@ -333,11 +333,11 @@ p.text-box {
     width: 100%;
     transition: all 1s;
     opacity: 0;
+    height: 10vh;
 }
 
 #floating-contact a {
     margin: 0px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
     /* animation: contact-button 1s infinite ease-in-out; */
     border-radius: 0;
     box-shadow: none;
